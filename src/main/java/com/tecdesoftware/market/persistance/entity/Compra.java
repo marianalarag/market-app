@@ -2,8 +2,7 @@ package com.tecdesoftware.market.persistance.entity;
 
 import jakarta.persistence.*;
 
-import java.time.LocalDate;
-
+import java.time.LocalDateTime;
 @Entity
 @Table (name = "compras")
 public class Compra {

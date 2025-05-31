@@ -70,4 +70,3 @@ public class Cliente {
         this.correoElectronico = correoElectronico;
     }
 }
-
