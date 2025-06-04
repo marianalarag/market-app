@@ -27,6 +27,10 @@ public class Producto {
 
     private Boolean estado;
 
+    @ManyToOne
+    @JoinColumn(name = "id_compra")
+    private Compra compra;
+
     // Constructores, getters y setters
     public Producto() {
     }

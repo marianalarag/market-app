@@ -1,6 +1,8 @@
 package com.tecdesoftware.market.persistance.entity;
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name="clientes")
 
@@ -20,6 +22,8 @@ public class Cliente {
     // Constructor sin argumentos (requerido por JPA)
     public Cliente() {
     }
+    @OneToMany(mappedBy = "cliente")
+    private List<Compra> compras;
 
     // Getters y Setters
     public String getId() {
