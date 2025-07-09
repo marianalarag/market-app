@@ -10,7 +10,6 @@ public class Category {
             return categoryId;
         }
 
-
         public void setCategoryId(Integer categoryId) {
             this.categoryId = categoryId;
         }
